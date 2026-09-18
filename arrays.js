@@ -1,7 +1,7 @@
 // arrays can be of different types in js and they are resizable like vectors in cpp
 const arr = [0,"hello!",2,3,4,5,6];
 //another way to declare an array
-// const arr = new Array(1,2,3,"hello",4,5);
+// const Narr = new Array(1,2,3,"hello",4,5);
 // console.log(Narr[1]);
 console.log(arr[1]);
 console.log(arr);
@@ -30,3 +30,15 @@ console.log("Slice",newarr.slice(1,4)); // sends a copy of the chosen indexes (l
 const Sp = newarr.splice(1,4); // remove the indexes completely from the array ( last index included)
 console.log(Sp); 
 console.log("after Splice",newarr);
+
+// to concat 2 arrays
+
+const a1=['sarthak','shukla'];
+const a2=['age','20'];
+const a3= a1.concat(a2);
+          //OR Spread method to concatenate two arrays ( ... -> Spread)
+const a4=[...a1,...a2];
+console.log(a3); 
+console.log(a4); 
+// flat function is used to convert arrays inside arrays into a singular new array that contains all the members of both the arrays
+

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Dabba {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin:100px;
+}
+
+#Red{
+    background-color:red;
+    color:red;
+}
+#Green{
+    background-color:green;
+    color:green;
+}
+#Blue{
+    background-color:blue;
+    color:blue;
+}
+#Brown{
+    background-color:brown;
+    color:brown;
+}
+
+#Back{
+    background-color:white;
+    color:white;
+}

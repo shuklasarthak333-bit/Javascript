@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 buttons.forEach((button) =>{
     console.log(button);
     button.addEventListener("click",(e) =>{
-        console.log(e.target);
+        //console.log(e.target);
         if(e.target.id ==="Red"){
             body.style.backgroundColor = e.target.id;
             //or

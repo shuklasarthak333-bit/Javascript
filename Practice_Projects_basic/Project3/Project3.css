@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: black;
+    color:white;
+    font-size: larger;
+}
+
+.center{
+    display:inline-block;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#clock{
+    padding:10px;
+    background-color: yellow;
+    color:black;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+

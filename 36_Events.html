@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+    <button id="butt">Click Me!</button>
+    <h1> </h1>
+    <a href="https://www.google.com/?zx=1794080675894" id="google" >Google Here</a>
+
+    <script>
+        const hea = document.querySelector("h1")
+        let i = 0;
+        // addEventListener Syntax:
+        // addEventListener('action to perform', function(){},false) -> here false is the default value and not neccesary to meddle with
+        // third parameter in addEventListener is called Event Propagation is a boolean value in which we can either set it to 
+        //bubbling mode(false - default value) : statements are printed in bottom to top priority
+        //capturing mode(true) : statements are printed from top to bottom
+        document.getElementById("butt").addEventListener('click',function(){
+            i++;
+            hea.innerHTML = `number of Clicks ${i}`;
+        })
+        // attachEvent() -> another method to do the same (not imp, only a part of history)
+        // jQuery -> on event listener (not imp, only a part of history)// type, timestamp, defaultPrevented
+        // important ones to study about :
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keyCode
+
+        document.getElementById('google').addEventListener('click',function(e){
+            e.preventDefault(); // prevents to be redirected to google.com when clicked on anchor element
+            console.log("google clicked");
+        },false)
+
+        
+    </script>
+</body>
+</html>
